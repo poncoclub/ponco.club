@@ -1,0 +1,11 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<footer class="footer place-content-center p-4 bg-neutral text-neutral-content absolute inset-x-0 bottom-0">
+  <p>{title} since 2023</p>
+</footer>
