@@ -1,50 +1,33 @@
-# Welcome to [Astro](https://astro.build)
+# ポンコウクラブ
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
+ポンコウクラブのWebサイト（[ponco.club](https://ponco.club/)）のリポジトリです。
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 技術要素
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+- 静的サイトジェネレータ: [Astro](https://astro.build/)
+- CSSフレームワーク: [Tailwind CSS](https://tailwindcss.com/)
+- UIライブラリ: [daisyUI](https://daisyui.com/)
+- CI/CD: GitHub Actions
+- ホスティング: GitHub Pages
 
+## 開発環境
 
-## 🚀 Project Structure
+### ローカル開発環境
 
-Inside of your Astro project, you'll see the following folders and files:
+パッケージ管理には`npm`を用いています。以下の通り実行してください。
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```sh
+npm install
+npm run dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## デプロイ
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+`main`ブランチにpushすると、GitHub Pagesにデプロイされます。詳細は[ワークフローの定義](https://github.com/poncoclub/ponco.club/blob/main/.github/workflows/deploy.yml)をご覧ください。
 
-Any static assets, like images, can be placed in the `public/` directory.
+## メンバー
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `npm run astro --help` | Get help using the Astro CLI                       |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- @[cotipie](https://github.com/cotipie)
+- @[ispern](https://github.com/ispern)
+- @[kurotaky](https://github.com/kurotaky)
+- @[kentaro](https://github.comkentaro)
