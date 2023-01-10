@@ -9,16 +9,60 @@ export interface Props {
 const { title } = Astro.props;
 ---
 
-<div class="navbar bg-neutral text-neutral-content">
-  <div class="flex-1">
-    <a class="btn btn-ghost normal-case text-xl">{title}</a>
+<header aria-label="Page Header"">
+  <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:px-8">
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <div class="text-center sm:text-left">
+        <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">
+          {title}
+        </h1>
+      </div>
+
+      <div class="flex flex-1 items-center justify-end">
+        <nav
+          aria-label="Site Nav"
+          class="hidden lg:flex lg:gap-4 lg:text-xs lg:font-bold lg:uppercase lg:tracking-wide lg:text-gray-500"
+        >
+          <a
+            href="#about"
+            class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-red-700"
+          >
+            About
+          </a>
+
+          <a
+            href="#members"
+            class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-red-700"
+          >
+            Members
+          </a>
+        </nav>
+
+        <div class="ml-8 flex items-center">
+          <div
+            class="flex items-center"
+          >
+            <span>
+              <a
+                href="https://youtube.com/@poncoclub"
+                class="block border-b-4 border-transparent p-6 hover:border-red-700"
+              >
+                <YouTubeIcon />
+                <span class="sr-only">YouTube</span>
+              </a>
+            </span>
+
+            <span>
+              <a
+                href="https://twitter.com/poncoclub"
+                class="block border-b-4 border-transparent p-6 hover:border-red-700"
+              >
+                <TwitterIcon />
+                <span class="sr-only">Twitter</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
   </div>
-  <div class="flex-none grid-flow-col gap-4">
-    <a>
-      <TwitterIcon />
-    </a>
-    <a>
-      <YouTubeIcon />
-    </a>
-  </div>
-</div>
+</header>
