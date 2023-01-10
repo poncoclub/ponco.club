@@ -6,6 +6,12 @@ export interface Props {
 const { title } = Astro.props;
 ---
 
-<footer class="footer place-content-center p-4 bg-neutral text-neutral-content absolute inset-x-0 bottom-0">
-  <p>{title} since 2023</p>
+<footer aria-label="Site Footer">
+  <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <p class="mt-4 text-center text-sm text-gray-500 lg:mt-0 lg:text-right">
+        {title} since 2023.
+      </p>
+    </div>
+  </div>
 </footer>
