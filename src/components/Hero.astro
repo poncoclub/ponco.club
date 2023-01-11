@@ -1,6 +1,4 @@
 ---
-import YouTube from '../components/YouTube.astro';
-
 export interface Props {
 	title: string;
 	description: string;
@@ -10,28 +8,23 @@ const { title, description } = Astro.props;
 ---
 
 <section class="sm:grid sm:grid-cols-2">
-  <div class="p-12 md:p-12 lg:px-16 lg:py-24">
+  <div class="p-12 sm:px-16 sm:py-24">
     <div class="mx-auto max-w-xl text-center sm:text-left">
       <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
         {title}
       </h2>
 
-      <p class="text-gray-500 md:mt-4 md:block">
+      <p class="text-gray-500 mt-4 md:block">
         {description}
       </p>
 
-      <div class="mt-4 md:mt-8">
-        <a
-          href="#"
-          class="inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"
-        >
-          Get Started Today
-        </a>
-      </div>
+      <p class="text-gray-500 mt-4 md:block hidden md:visible">
+        アマチュア無線はもちろん、ライセンスフリー無線（DCR、LCR）も楽しんでいます。インターネットサービスの開発に携わるメンバーで構成されているので、ソフトウェア面でのアウトプットもしていきます。
+      </p>
     </div>
   </div>
 
-  <div class="sm:p-0 lg:pr-12 lg:pt-24">
+  <div class="sm:p-0 sm:pr-12 sm:pt-24">
     <img src="/assets/hero.jpg" class="lg:rounded-lg lg:shadow-lg" />
     <!-- <YouTube videoid="m_bD2Tbpdnw" /> -->
   </div>
