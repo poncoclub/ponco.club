@@ -9,8 +9,8 @@ export interface Props {
 const { title, description } = Astro.props;
 ---
 
-<section class="overflow-hidden sm:grid sm:grid-cols-2">
-  <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+<section class="sm:grid sm:grid-cols-2">
+  <div class="p-4 md:p-12 lg:px-16 lg:py-24">
     <div class="mx-auto max-w-xl text-center sm:text-left">
       <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
         {title}
@@ -31,7 +31,8 @@ const { title, description } = Astro.props;
     </div>
   </div>
 
-  <div class="sm:p-0 lg:pr-12 lg:py-12">
-    <YouTube videoid="m_bD2Tbpdnw" />
+  <div class="sm:p-0 lg:pr-12 lg:pt-24">
+    <img src="/assets/hero.jpg" class="lg:rounded-lg lg:shadow-lg" />
+    <!-- <YouTube videoid="m_bD2Tbpdnw" /> -->
   </div>
 </section>
