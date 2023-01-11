@@ -6,7 +6,7 @@
 
 - 静的サイトジェネレータ: [Astro](https://astro.build/)
 - CSSフレームワーク: [Tailwind CSS](https://tailwindcss.com/)
-- UIライブラリ: [daisyUI](https://daisyui.com/)
+- UIライブラリ: [HyperUI](https://www.hyperui.dev/)
 - CI/CD: GitHub Actions
 - ホスティング: GitHub Pages
 
